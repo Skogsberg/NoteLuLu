@@ -1,0 +1,17 @@
+G:\Eget\NoteLuLu\NoteLuLu\bin\Debug\NoteLuLu.exe.config
+G:\Eget\NoteLuLu\NoteLuLu\bin\Debug\NoteLuLu.exe
+G:\Eget\NoteLuLu\NoteLuLu\bin\Debug\NoteLuLu.pdb
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.csprojAssemblyReference.cache
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\Assets\Data\Search.g.cs
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\MainWindow.g.cs
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\App.g.cs
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu_MarkupCompile.cache
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu_MarkupCompile.lref
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\Assets\Data\Search.baml
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\MainWindow.baml
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.g.resources
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.Properties.Resources.resources
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.csproj.GenerateResource.cache
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.csproj.CoreCompileInputs.cache
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.exe
+G:\Eget\NoteLuLu\NoteLuLu\obj\Debug\NoteLuLu.pdb

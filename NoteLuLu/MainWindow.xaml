@@ -1,0 +1,50 @@
+﻿<Window x:Class="NoteLuLu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoteLuLu"
+        mc:Ignorable="d"
+        Title="NoteLuLu" Height="600" Width="800" SizeToContent="WidthAndHeight">
+
+    <Grid Background="#403E3F">
+
+        <!-- Xaml code for Menubar -->
+        <DockPanel>
+            <Menu FontFamily="Cambria" FontSize="16" DockPanel.Dock="Top">
+                <!--File-->
+                <MenuItem Foreground="#000000" Header="_File">
+                    <MenuItem Header="New" Click="Menu_Click" InputGestureText="Ctrl+N" />
+                    <MenuItem Header="New Window" Click="Menu_Click" />
+                    <MenuItem Header="Open" Click="Menu_Click" InputGestureText="Ctrl+O"/>
+                    <MenuItem Header="Save" Click="Menu_Click" InputGestureText="Ctrl+S"/>
+                    <MenuItem Header="Save As" Click="Menu_Click" InputGestureText="Ctrl+Alt+S"/>
+                    <Separator/>
+                    <MenuItem Header="Print" Click="Menu_Click" InputGestureText="Ctrl+P"/>
+                    <Separator/>
+                    <MenuItem  Header="Exit" Click="Menu_Click" InputGestureText="Alt+F4"/>
+                </MenuItem>
+                <!--Edit-->
+                <MenuItem Foreground="#000000" Header="_Edit">
+                    <MenuItem Header="Undo" Click="Menu_Click" InputGestureText="Ctrl+Z" />
+                    <MenuItem Header="Redo" Click="Menu_Click" InputGestureText="Ctrl+Y" />
+                    <Separator/>
+                    <MenuItem Header="Cut" Click="Menu_Click" InputGestureText="Ctrl+X" />
+                    <MenuItem Header="Copy" Click="Menu_Click" InputGestureText="Ctrl+C"/>
+                    <MenuItem Header="Paste" Click="Menu_Click" InputGestureText="Ctrl+V"/>
+                    <MenuItem Header="Select all" Click="Menu_Click" InputGestureText="Ctrl+A"/>
+                    <Separator/>
+                    <MenuItem Header="Search Google" Click="Menu_Click" />
+                    <MenuItem Header="Search" Click="Menu_Click" InputGestureText="Ctrl+F"/>
+                    <Separator/>
+                    <MenuItem  Header="Set read only" Click="Menu_Click"  IsCheckable="True" IsChecked="False" />
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <!-- Code for the big texbox -->
+        <TextBox SelectionBrush="Blue" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" IsReadOnly="False" AcceptsTab="True" AllowDrop="True" x:Name="MainTextBox" HorizontalAlignment="Left" Margin="0,25,0,25" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="785" Height="500" Background="#FFD4CECE" BorderBrush="{x:Null}" FontSize="16" FontFamily="Cambria" Foreground="#FF363333"/>
+
+
+    </Grid>
+</Window>
