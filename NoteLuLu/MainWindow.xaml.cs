@@ -26,8 +26,7 @@ namespace NoteLuLu
             InitializeComponent();
             CheckIfStringIsEmpty();
             sal = new SaveAndLoad(MainTextBox);
-
-
+            LineBlock.Text = "1";
 
         }
 
@@ -53,7 +52,7 @@ namespace NoteLuLu
                     case "Paste": editTools = new EditTools(MainTextBox); editTools.PasteMethod(); break;
                     case "Select all": editTools = new EditTools(MainTextBox); editTools.SelectAllMethod(); break;
                     case "Search": Search search = new Search(MainTextBox); search.Show(); break;
-                    case "Search Google": if (MainTextBox.SelectionLength > 0) { SearchWebb SWebb = new SearchWebb(MainTextBox); SWebb.SearchWebbMethod(); } else { return; } break;
+                    case "Search web": if (MainTextBox.SelectionLength > 0) { SearchWebb SWebb = new SearchWebb(MainTextBox); SWebb.SearchWebbMethod(); } else { return; } break;
                     case "Set read only": if (menu.IsChecked == true) { MainTextBox.IsReadOnly = true; } else { MainTextBox.IsReadOnly = false; } break;
                 }
             }
@@ -85,8 +84,22 @@ namespace NoteLuLu
             }
         }
 
+      
+
+        private void MainTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int line;
+            line = MainTextBox.LineCount;
+            string lineNumbers = "";
+
+            for (int i = 1; i <= line; i++)
+            {
+                lineNumbers += i.ToString() + "\n";
+            }
+            LineBlock.Text = lineNumbers;
 
 
+        }
     }
 
 

@@ -34,17 +34,24 @@
                     <MenuItem Header="Paste" Click="Menu_Click" InputGestureText="Ctrl+V"/>
                     <MenuItem Header="Select all" Click="Menu_Click" InputGestureText="Ctrl+A"/>
                     <Separator/>
-                    <MenuItem Header="Search Google" Click="Menu_Click" />
+                    <MenuItem Header="Search web" Click="Menu_Click" />
                     <MenuItem Header="Search" Click="Menu_Click" InputGestureText="Ctrl+F"/>
                     <Separator/>
                     <MenuItem  Header="Set read only" Click="Menu_Click"  IsCheckable="True" IsChecked="False" />
                 </MenuItem>
+                <MenuItem Foreground="#000000" Header="_Settings">
+                    <MenuItem Header="Preferences" Click="Menu_Click" />
+                </MenuItem>
+
             </Menu>
         </DockPanel>
 
         <!-- Code for the big texbox -->
-        <TextBox SelectionBrush="Blue" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" IsReadOnly="False" AcceptsTab="True" AllowDrop="True" x:Name="MainTextBox" HorizontalAlignment="Left" Margin="0,25,0,25" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="785" Height="500" Background="#FFD4CECE" BorderBrush="{x:Null}" FontSize="16" FontFamily="Cambria" Foreground="#FF363333"/>
-
-
+        <ScrollViewer VerticalScrollBarVisibility ="Auto" Width="780" Height="550" Margin="0,25,0,0">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch" Orientation="Horizontal" >
+                <TextBlock x:Name="LineBlock" TextAlignment="Right" TextWrapping="Wrap" Text="1" Margin="0,0,0,0" FontSize="16" FontFamily="Cambria" HorizontalAlignment="Right" Width="60"/>
+                <TextBox SelectionBrush="Blue" TabIndex="4" AcceptsReturn="True" IsReadOnly="False" AcceptsTab="True" AllowDrop="True" x:Name="MainTextBox" HorizontalAlignment="Stretch" Margin="5,0,0,0" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" MinWidth="700" MinHeight="530" VerticalContentAlignment="Stretch" Background="#FFD4CECE" BorderBrush="{x:Null}" FontSize="16" FontFamily="Cambria" Foreground="#FF363333" TextChanged="MainTextBox_TextChanged"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
